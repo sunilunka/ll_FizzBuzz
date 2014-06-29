@@ -6,11 +6,14 @@ class FizzBuzz
 
 	def pnt_num 
 		@num_arr.each do |i|
-			case i
-				when i % 15 == 0 then puts "#{i} FizzBuzz"
-				when i % 5 == 0 then puts "#{i} Buzz"
-				when i % 3 == 0 then puts "#{i} Fizz"
-				else puts "#{i}"
+			if i % 15 == 0 
+				puts "#{i} FizzBuzz"
+			elsif i % 5 == 0 
+				puts "#{i} Buzz"
+			elsif i % 3 == 0 
+				puts "#{i} Fizz"
+			else 
+				puts "#{i}"
 			end
 		end
 	end
