@@ -1,9 +1,7 @@
 class FizzBuzz
 	def initialize(x,y)
 		@num_arr = [ ]
-		for i in x..y
-			@num_arr.push(i)
-		end
+		x.upto(y) { |i| @num_arr.push(i) }
 	end
 
 	def pnt_num 
